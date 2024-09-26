@@ -8,7 +8,7 @@ const Background = () => {
       <Environment preset="sunset" />
       <Sphere scale={[100, 100, 100]} rotateY={Math.PI / 2}>
     <LayerMaterial lighting="physical" side={THREE.BackSide} transmission={1}>
-    <Gradient axes={"y"} start={0} end={-0.5} colorA={"#0469DB"} colorB={"white"}/>
+    <Gradient axes={"y"} start={0} end={-0.2} colorA={"#0469DB"} colorB={"white"}/>
     </LayerMaterial>
       </Sphere>
     </>

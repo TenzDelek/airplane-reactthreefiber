@@ -8,7 +8,7 @@ import { Airplanetib } from "./Airplanetib";
 export const Experience = () => {
   return (
     <>
-      <OrbitControls />
+      <OrbitControls enableZoom={false} />
       <Background/>
       {/* <mesh>
         <boxGeometry />
@@ -20,9 +20,9 @@ export const Experience = () => {
          <Cloud opacity={0.7} scale={[0.4, 0.4, 0.4]} rotation-y={Math.PI / 9} position={[1,-0.2,-12]}/>
          <Cloud opacity={0.7} scale={[0.5, 0.5, 0.5]} position={[-1,1,-53]}/>
          <Cloud opacity={0.3} scale={[0.8, 0.8, 0.8]} position={[0,1,-100]}/>
-
+         <Cloud opacity={0.6} scale={[0.2, 0.2, 0.2]} position={[0,-0.5,2]}/>
       <Float floatIntensity={2} speed={4}>
-       <Airplanetib rotation-y={Math.PI / 2} scale={[0.2, 0.2, 0.2]} position-y={0.1}/>
+       <Airplanetib rotation-y={-Math.PI /2} scale={[0.2, 0.2, 0.2]} position-y={0.1}/>
       {/* <Airplane rotation-y={Math.PI / 2} scale={[0.2, 0.2, 0.2]} position-y={0.1}/> */}
       </Float>
     </>
